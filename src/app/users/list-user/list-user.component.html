@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>User Table</h2>
+            
+  <table class="table table-striped">
+    <thead>
+      <tr (click) = "displayInfo()">
+        <th>Login Names</th>
+        <th>Profile Picture</th>
+        <th>Github Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = let user of Users >
+        <td>{{user.name}}</td>
+        <td>{{user.picture}}</td>
+        <td>{{user.link}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
